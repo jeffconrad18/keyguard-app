@@ -1,10 +1,9 @@
 name: Build APK
 
 on:
-  push:
-    branches:
-      - main # Ändere dies entsprechend deiner Hauptentwicklungsbranch
-
+  workflow_dispatch:
+    inputs:
+    
 jobs:
   build:
     runs-on: ubuntu-latest
